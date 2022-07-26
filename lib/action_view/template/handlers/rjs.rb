@@ -5,8 +5,9 @@ module ActionView
       class_attribute :default_format
       self.default_format = :js
 
-      def call(template, source)
-        "update_page do |page|;#{source}\nend"
+      def call(template, source=nil)
+        block_source = Rails.version >= "6" ? source : template.source
+        "update_page do |page|;#{block_source}\nend"
       end
     end
   end
