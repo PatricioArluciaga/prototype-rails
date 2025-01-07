@@ -1,1 +1,1 @@
-This fork provides thoroughly untested and unsupport Rails 7 compatability for `prototype-rails`.
+This fork provides thoroughly untested and unsupported Rails 7 compatibility for `prototype-rails`.
